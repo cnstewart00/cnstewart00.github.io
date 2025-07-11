@@ -16,25 +16,32 @@
     </style>
   </head>
   <style>
-  body {
-    background-color: #000000; /* Entire page background */
-    color: #ffffff; /* Makes text readable on dark background */
-  }
+    body {
+      background-color: #000000;
+      color: #ffffff;
+    }
 
-  h1, h2, h3 {
-    color: #98ff98; /* Mint green headings */
-  }
+    h1, h2, h3 {
+      color: #98ff98;
+    }
 
-  .top-bar {
-    background-color: #000000 !important; /* Match top bar to body */
-    border-bottom: 1px solid #444; /* Optional: subtle border */
-  }
+    .top-bar,
+    .top-bar-left,
+    .top-bar-right,
+    .menu,
+    .menu-text {
+      background-color: #000000 !important; /* Force all areas to be black */
+    }
 
-  .top-bar .menu-text,
-  .top-bar a {
-    color: #98ff98; /* Mint green text in the nav */
-  }
-</style>
+    .menu a,
+    .menu-text {
+      color: #98ff98 !important; /* Mint green text */
+    }
+
+    .menu a:hover {
+      color: #ffffff !important; /* Optional: white on hover */
+    }
+  </style>
   <body>
 
     <!-- Start Top Bar -->
